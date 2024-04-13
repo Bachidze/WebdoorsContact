@@ -111,6 +111,9 @@ export default function Inputs() {
                 ""
               )}
             </div>
+            <div className="flex justify-center mt-[45px]">
+            <button className="w-[100%] pt-[12px] pb-[12px] bg-gradient-to-r from-purple-600 to-purple-800 rounded-[15px] border border-solid border-white border-opacity-30">Send</button>
+            </div>
           </div>
         </form>
       </section>
