@@ -8,7 +8,7 @@ export default function Contact() {
           <div className="border border-[#8F8CEF] w-[5.7px] h-[5.7px] rounded-[50%] md:w-[7px] md:h-[7px] 3xl:w-[10px] 3xl:h-[10px]"></div>
         </div>
         <div className="mt-[6px] 3xl:mt-[14px]">
-          <h1 className="text-[14px] leading-[17.5px] font-medium text-white md:text-[18px] md:leading-[18px] w-[95px] 3xl:text-[32px] 3xl:leading-10 3xl:w-[166px] ">
+          <h1 className="text-[14px] leading-[17.5px] font-medium text-white md:text-[18px] md:leading-[18px] w-[95px] 3xl:text-[32px] 3xl:leading-10 3xl:w-[180px] ">
             Contact Us
           </h1>
         </div>
