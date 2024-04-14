@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function Inputs() {
   const [active, setActive] = useState(0);
@@ -18,11 +18,15 @@ export default function Inputs() {
     }
   };
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  }
+
   return (
-    <main className="w-[92%] m-auto max-w-[1920px] mt-[120px]">
+    <main className="w-[92%] m-auto max-w-[1920px] mt-[120px] md:mt-[90px]">
       <section>
-        <form className="gridbg-transparent">
-          <div className="grid gap-[25px]  ">
+        <form onSubmit={handleSubmit} className="gridbg-transparent">
+          <div className="grid gap-[25px] md:grid-cols-2">
             <div className="relative">
               <input
                 maxLength={30}
@@ -43,6 +47,7 @@ export default function Inputs() {
             </div>
             <div className="relative">
               <input
+              maxLength={30}
                 className={`bg-transparent border-b-2 w-[100%] outline-none rounded-[5px] pb-[15px] font-bold text-[16px] opacity-60 -tracking-[1px] leading-5 ${
                   active === 2
                     ? "border-b-[#8F8CEF] text-white placeholder:text-white opacity-90"
@@ -60,6 +65,7 @@ export default function Inputs() {
             </div>
             <div className="relative">
               <input
+              maxLength={30}
                 className={`bg-transparent border-b-2 w-[100%] outline-none rounded-[5px] pb-[15px] font-bold text-[16px] opacity-60 -tracking-[1px] leading-5 ${
                   active === 3
                     ? "border-b-[#8F8CEF] text-white placeholder:text-white opacity-90"
@@ -112,7 +118,7 @@ export default function Inputs() {
               )}
             </div>
             <div className="flex justify-center mt-[45px]">
-            <button className="w-[100%] pt-[12px] pb-[12px] bg-gradient-to-r from-purple-600 to-purple-800 rounded-[15px] border border-solid border-white border-opacity-30">Send</button>
+            <button  className="w-[100%] pt-[12px] pb-[12px] bg-gradient-to-r from-purple-600 to-purple-800 rounded-[15px] border border-solid border-white border-opacity-30 text-[16px] font-bold text-white">Send</button>
             </div>
           </div>
         </form>
