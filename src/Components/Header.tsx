@@ -28,15 +28,15 @@ export default function Header() {
         </div>
         <div className="3xl:-translate-x-[90px]">
           <img
-            className="w-[24.93px] h-[37px] md:w-[31px] md:h-[46px]"
+            className="w-[24.93px] h-[37px] md:w-[31px] md:h-[46px] 3xl:w-[39px] 3xl:h-[59px]"
             src="/assets/MobileHeader2Webdoors.svg"
             alt="headerSecond"
           />
         </div>
         <div className="3xl:flex 3xl:items-center 3xl:gap-[50px]">
-          <img className="hidden 3xl:flex" src="/assets/desktopheaderblackmember.svg" alt="blackmember" />
+          <img className="hidden 3xl:flex 3xl:w-[50px] 3xl:h-[50px]" src="/assets/desktopheaderblackmember.svg" alt="blackmember" />
           <img
-            className="w-[37px] h-[19px]"
+            className="w-[37px] h-[19px] 3xl:w-[46px] 3xl:h-[25px]"
             src="/assets/MobileHeader3Webdoors.svg"
             alt="headerThird"
           />
