@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 export default function Inputs() {
   const [active, setActive] = useState(0);
@@ -22,8 +24,19 @@ export default function Inputs() {
     e.preventDefault();
   }
 
+  const notify = () => toast.info('Soon', {
+    position: "top-center",
+    autoClose: 2000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    transition: Bounce,
+    });
   return (
-    <main className="w-[92%] m-auto max-w-[1920px] mt-[120px] md:mt-[90px]">
+    <main className="w-[92%] m-auto max-w-[1920px] mt-[120px] md:mt-[90px] 3xl:mt-[60px] 3xl:max-w-[1051px]">
       <section>
         <form onSubmit={handleSubmit} className="gridbg-transparent">
           <div className="grid gap-[25px] md:grid-cols-2">
@@ -117,8 +130,11 @@ export default function Inputs() {
                 ""
               )}
             </div>
-            <div className="flex justify-center mt-[45px]">
-            <button  className="w-[100%] pt-[12px] pb-[12px] bg-gradient-to-r from-purple-600 to-purple-800 rounded-[15px] border border-solid border-white border-opacity-30 text-[16px] font-bold text-white">Send</button>
+            <div className="flex justify-center mt-[45px] 3xl:relative 3xl:mt-[50px]">
+            <button onClick={notify} className="w-[100%] pt-[12px] pb-[12px] bg-gradient-to-r from-purple-600 to-purple-800 rounded-[15px] border border-solid border-white border-opacity-30 text-[16px] font-bold text-white 3xl:w-[250px] 3xl:h-[50px] 3xl:absolute 3xl:left-0">Send</button>
+            <ToastContainer 
+            limit={1}
+            />
             </div>
           </div>
         </form>
