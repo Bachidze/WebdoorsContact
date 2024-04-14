@@ -67,9 +67,9 @@ export default function Footer() {
         </div>
       </section>
       <section className="flex flex-col justify-center items-center 3xl:flex-row 3xl:justify-between">
-        <div>
+        <div className="mt-[90px]">
           <img
-            className="w-[150px] h-[50.33px] md:w-[252px] md:h-[83px] 3xl:w-[276.9px] 3xl:h-[91.36px] 3xl:-translate-y-12"
+            className="w-[150px] h-[50.33px] md:w-[252px] md:h-[83px] 3xl:w-[276.9px] 3xl:h-[91.36px] -translate-y-[55px]"
             src="/assets/Webdoors.svg"
             alt="MainWebdoorsImg"
           />
@@ -86,7 +86,7 @@ export default function Footer() {
                 alt="EbaImg"
               />
             </div>
-            <div className="mb-[24px] translate-y-14">
+            <div className="mb-[44px] mt-[80px]">
               <h1 className="text-[16px] leading-[18.75px]">Copyright © 2018-{currentYear} all rights reserved</h1>
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function Footer() {
                 </h3>
               </div>
             </div>
-            <div className="flex w-[90%] items-center translate-x-[158px] mt-[19.58px]">
+            <div className="flex w-[90%] items-center translate-x-[158px] translate-y-10 mb-[20px]">
               <div className="border-2 w-[10px] h-[10px] rounded-[50%]"></div>
               <div className="border-2 w-[82%]"></div>
               <div className="border-2 h-[8px]"></div>
