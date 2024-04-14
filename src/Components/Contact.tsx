@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <main className="w-[92%] m-auto max-w-[1920px] mt-[50px] 3xl:mt-[200px]">
       <section className="flex flex-col justify-center items-center w-[83px] m-auto">
-        <div className="flex items-center self-end relative right-[3px] 3xl:left-10">
+        <div className="flex items-center self-end relative right-[13px] md:left-1 3xl:left-10">
           <div className="border border-[#8F8CEF] h-[5.7px] md:h-[6px] 3xl:h-[8px]"></div>
           <div className="border border-[#8F8CEF] w-[35px] md:w-[45px] 3xl:w-[80px]"></div>
           <div className="border border-[#8F8CEF] w-[5.7px] h-[5.7px] rounded-[50%] md:w-[7px] md:h-[7px] 3xl:w-[10px] 3xl:h-[10px]"></div>
